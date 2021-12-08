@@ -7,7 +7,7 @@ settings.outformat="pdf"
 label("Hello world!");
 ```
 
-Compiled this .asy file, we can see a single page labeled with text "Hello world!" in the generated pdf file. The pdf output format is controlled by the beginning of the code, without which it well defaultly output dvi format.
+Compiled this .asy file, we can see a single page labeled with text "Hello world!" in the generated pdf file. The pdf output format is controlled by the beginning of the code, without which it will defaultly output dvi format.
 
 We can control the font size by adding command:
 

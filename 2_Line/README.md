@@ -33,7 +33,7 @@ size(3cm, 3cm, keepAspect=false);
 
 To make an axis, we need an arrow in the end of a line. This is easy:
 
-```
+```c
 draw((-.1,0)--(2,0), arrow=Arrow);
 ```
 
@@ -44,3 +44,38 @@ There are several styles of arrows in Asymptote code.
 | Arrow() | Arrow(SimpleHead) | Arrow(HookHead) |
 | ArcArrow() | ArcArrow(SimpleHead) | ArcArrow(HookHead) |
 | Arrow(TexHead) | | |
+
+## 2.4 Curved Path
+
+To draw a curved path by several coordinates, we can replace `--` with `..` between coordinates. Then, the path will be smooth.
+
+```c
+draw((0,0)..(1,1)..(2,sqrt(2)));
+```
+
+We can give a parameter as the tangent after the coordinates to make the path more precise. For instance, we can make a rough sine curve as below
+
+```c
+//draw((0,0){up}..(1,1)..(2,sqrt(2)));
+draw((0,0){(1,1)}..{right}(pi/2,1)..{(1,-1)}(pi, 0)..{right}(3*pi/2,-1)..{(1,1)}(2*pi, 0));
+```
+
+## 2.5 Markers
+
+We can use the marker option of draw cammand to make markers to the pairs we give.
+
+```c
+draw((0,0){(1,1)}..{right}(pi/2,1)..{(1,-1)}(pi, 0)..{right}(3*pi/2,-1)..{(1,1)}(2*pi, 0), 
+    marker=MarkFill[0]);
+```
+
+Here are all the built-in markers:
+
+| option | description | option | description |
+| --- | --- | --- | --- |
+| Mark[0] | open circle | MarkFill[0] | filled circle |
+| Mark[1] | open triangle | MarkFill[1] | filled triangel |
+| Mark[2] | open square | MarkFill[2] | filled square |
+| Mark[3] | open pentagon | MarkFill[3] | filled pentagon |
+| Mark[4] | open triangle(upside down) | MarkFill[4] | filled triangle(upside down) |
+| Mark[5] | x-mark | Mark[6] | asterisk |
