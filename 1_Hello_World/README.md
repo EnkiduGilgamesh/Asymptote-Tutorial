@@ -2,7 +2,7 @@
 
 The simplest command in Asymptote is:
 
-```c
+```c++
 settings.outformat="pdf"
 label("Hello world!");
 ```
@@ -11,14 +11,14 @@ Compiled this .asy file, we can see a single page labeled with text "Hello world
 
 We can control the font size by adding command:
 
-```c
+```c++
 defaultpen(fontsize(10pt));
 label("Hello world");
 ```
 
-Let's look up the command `label` in Asymptote manual, and we can see the total command of it is below:
+Let's look up the command `label` in Asymptote manual("../rsc/asymptote.pdf"), and we can see the total command of it is below:
 
-```c
+```c++
 void label(picture pic=currentpicture, 
             Label L, 
             pair position, 
