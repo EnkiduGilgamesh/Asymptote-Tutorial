@@ -26,7 +26,7 @@ draw((0,-.1)--(0,2),arrow=Arrow(TexHead));
 draw((0,0){up}..(1,1)..(2,sqrt(2)));
 ```
 
-Another command is `dilldraw`
+Another command is `filldraw`
 
 ```c++
 filldraw((x,0) -- striptop -- (x+dx,0) -- cycle, black);

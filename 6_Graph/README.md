@@ -15,7 +15,7 @@ The `graph` is a piece of code writtern for drawing functions. To use the packag
 settings.outformat="pdf"; 
 unitsize(3cm); 
 import graph; 
-real f(real x) { 5
+real f(real x) { 
     return sqrt(x);
 }
 path g = graph(f,0,2);

@@ -27,7 +27,7 @@ Above commands will generate two straight lines one of which is from position (-
 
 The unit length is controlled by the command `unitsize(dimension)`.
 
-A very similar command is `size(width-dimension,height-dimension)`. The latter command will try its best to make the disgram as large as posible, with the given ratio and never exceeding the specified dimension. This command is very useful when you are looking for a appropriate size to your disgram.
+A very similar command is `size(width-dimension,height-dimension)`. The latter command will try its best to make the disgram as large as possible, with the given ratio and never exceeding the specified dimension. This command is very useful when you are looking for a appropriate size to your disgram.
 
 In addition, the dimension of command `size` is defaultly set 0 which means there is no request in this dimension.
 
@@ -61,7 +61,7 @@ Another option of `arrow` is the position. We can set the position where the arr
 arrow=Arrow(TeXHead, position=0.5);
 ```
 
-with the `0` is the beginning of the path.
+with the `0` the beginning and the `1` the end of the path.
 
 ## 2.4 Bar
 
